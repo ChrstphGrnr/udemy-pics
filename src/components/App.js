@@ -2,12 +2,18 @@ import React from 'react'
 import SearchBar from './SearchBar'
 
 
-const App = () => {
+class App extends React.Component {
+
+    searchTerm = (props) => {
+        console.log(props)
+    }
+    
+    render() {
     return (
         <div className="ui container" style={{marginTop: '10px'}}>
-            <SearchBar />
+            <SearchBar searchTerm={this.searchTerm}/>
         </div>
-    )
+    )}
 }
 
 export default App;
