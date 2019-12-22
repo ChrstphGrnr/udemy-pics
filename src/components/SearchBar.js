@@ -5,11 +5,6 @@ class SearchBar extends React.Component {
         searchTerm: ''
     }
 
-    // onInputChange(e) {
-    //     e.preventDefault();
-    //     this.setState({searchTerm: e.target.value})
-    // }
-
     onFormSubmit = (e) => {
         e.preventDefault();
         
